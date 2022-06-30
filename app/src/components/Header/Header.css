@@ -1,11 +1,12 @@
 .header-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between; 
 }
 
 .title{
-    color:green
+    color:green;
+    
 }
 
 .btn {
@@ -18,7 +19,7 @@
     justify-content: center; 
     align-items: center;
     font-weight: bold;
-    
+   
 }
 
 .btn:hover {
