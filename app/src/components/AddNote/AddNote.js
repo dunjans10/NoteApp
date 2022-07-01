@@ -1,8 +1,19 @@
-import React from 'react'
+import React from 'react';
+import Grid from '@mui/material/Grid';
+import './AddNote.css'
 
 const AddNote = () => {
   return (
-    <div>AddNote</div>
+
+    <Grid item  className='add-container'>
+
+<input/>
+<div>
+    <h4>Remaning</h4>
+    <button>Save</button>
+</div>
+  
+  </Grid>
   )
 }
 

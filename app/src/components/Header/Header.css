@@ -9,23 +9,7 @@
     
 }
 
-.btn {
-    border: 2px solid green;
-    background-color: lightgray;
-    border-radius: 100px;
-    cursor: pointer;
-    padding: 12px 24px;
-    display: inline-flex;
-    justify-content: center; 
-    align-items: center;
-    font-weight: bold;
-   
-}
 
-.btn:hover {
-    background-color: green;
-    color: lightgray;
-}
 
 
 
