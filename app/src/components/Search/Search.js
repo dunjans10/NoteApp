@@ -4,13 +4,14 @@ import IconButton from '@mui/material/IconButton';
 import InputBase from '@mui/material/InputBase';
 
 import './Search.css';
+import { Box } from '@mui/material';
 
 const Search = ({	handleSearchNote}) => {
   
   return (
-    <div className='search-container'>
+    <Box sx={{ backgroundColor:'#f9f4f4', borderRadius:'7px', border:'2px solid rgb(45, 199, 127)'}}>
 
-       <IconButton sx={{ p: '15px'}} aria-label="menu">
+       <IconButton sx={{ p: '15px'}} >
           <SearchIcon />
        </IconButton>
 
@@ -21,7 +22,7 @@ const Search = ({	handleSearchNote}) => {
         onChange={(event) =>	handleSearchNote(event.target.value)}
 
        />
-    </div>
+    </Box>
  
   )
 }

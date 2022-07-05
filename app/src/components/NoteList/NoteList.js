@@ -2,13 +2,16 @@ import React from 'react';
 import Note from '../Note/Note';
 import AddNote from '../AddNote/AddNote';
 
+import Box from '@mui/material/Box';
+
 import './NoteList.css';
+
 
 const NoteList = ({notes, handleAddNote,handleDeleteNote}) => {
 
   return (
 
-    <div className='list-container'>
+    <Box className='list-container'>
          
        {notes.map((note) => (<Note 
        id={note.id}
@@ -20,7 +23,8 @@ const NoteList = ({notes, handleAddNote,handleDeleteNote}) => {
 
       <AddNote handleAddNote={handleAddNote} />
        
-    </div>
+    </Box>
+   
   )
 }
 

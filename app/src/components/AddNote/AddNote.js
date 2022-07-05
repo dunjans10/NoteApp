@@ -1,5 +1,11 @@
 import React, {useState} from 'react';
 
+import Grid from '@mui/material/Grid';
+import Box from '@mui/material/Box';
+import TextareaAutosize from '@mui/base/TextareaAutosize';
+import Button from '@mui/material/Button';
+
+
 import './AddNote.css'
 
 const AddNote = ({handleAddNote}) => {
@@ -21,27 +27,37 @@ const AddNote = ({handleAddNote}) => {
 	};
  
 return (
+	<Box className='add-container'>
 
-  <div className='add-container' onSubmit={handleSaveClick}>
+  		<Grid container  onSubmit={handleSaveClick}>
 
-		<textarea
-				rows='8'
-				cols='10'
-				placeholder='Type to add a note...'
-				value={noteText}
-				onChange={handleChange}
-			></textarea>
-		<div className='note-footer'>
+		<TextareaAutosize
+
+		 minRows={8}
+ 		 placeholder="Type to add a note..."
+  		 value={noteText}
+		 onChange={handleChange}
+		/>
+
+		
+		<Grid container className='wrapper'>
 			<small>
 				{characterLimit - noteText.length} Remaining
 			</small>
-			<button className='btn-save' onClick={handleSaveClick}>
-					Save
-			</button>
-		</div>    
-  </div>
- 
+			<Button variant="outlined" onClick={handleSaveClick}
+               
+                sx={{ border: '2px solid green', borderRadius:'15px', backgroundColor:'#f9f4f4', 
+                    textTransform:'capitalize', color:'black',fontWeight:'bold' }}>
+
+                     Save
+  
+              </Button>
+			
+		</Grid>    
+  </Grid>
+  </Box>
   )
 }
 
 export default AddNote
+

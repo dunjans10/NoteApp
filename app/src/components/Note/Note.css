@@ -1,19 +1,7 @@
 .note {
     background-color: rgb(45, 199, 127);
     border-radius: 10px;
-    padding: 10px;
-	min-height: 170px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-
-	
-}
-.note-footer {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+    padding: 20px;
 }
 
 .delete-icon {
