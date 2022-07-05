@@ -1,10 +1,23 @@
-.container {
-   background-color: white;
-   margin: auto;
-   max-width: 960px;
-   width: 100%;
-   height: 100vh;
-   padding-right: 15px;
-   padding-left: 15px;
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   
+  }
+
+.dark-background {
+	background-color: black;
+}
+
+.dark-background h1 {
+	color: white;
+}
+
+.container {
+	max-width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	min-height: 100vh;
 }

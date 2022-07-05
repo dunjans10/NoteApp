@@ -1,7 +1,36 @@
 .add-container {
-    background-color: rgb(42, 174, 48);
+    background-color: rgb(45, 199, 127);
     border-radius: 10px;
+    padding: 10px;
+}
+
+.add-note {
+    width: 100%;
+    background-color: rgb(45, 199, 127);
+    padding: 25px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.btn-save {
+    border-radius: 10px;
+    border:2px solid  green;
+    backgroundColor:'#f9f4f4'
 }
 
 
+
+textarea {
+	width: 100%;
+	background-color: rgb(45, 199, 127);
+	
+}
+
+textarea:focus {
+	outline: none;
+}
 

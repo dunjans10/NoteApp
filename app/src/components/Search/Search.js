@@ -5,24 +5,26 @@ import InputBase from '@mui/material/InputBase';
 
 import './Search.css';
 
-const Search = () => {
+const Search = ({	handleSearchNote}) => {
   
   return (
     <div className='search-container'>
+
        <IconButton sx={{ p: '15px'}} aria-label="menu">
-        <SearchIcon />
-      </IconButton>
-      <InputBase
+          <SearchIcon />
+       </IconButton>
+
+       <InputBase
+
         placeholder="Search for your notes..."
         inputProps={{ 'aria-label': 'Search for your notes...' }}
-      />
-     </div>
+        onChange={(event) =>	handleSearchNote(event.target.value)}
+
+       />
+    </div>
  
   )
 }
 
 export default Search
 
-// <input className='search-input' type="text" placeholder='Search for your notes...'/>
-//<SearchIcon className='icon'/>
-//<TextField  sx={{border: '2px solid green', borderRadius: 2}} fullWidth label="Search for your notes..." id="fullWidth" />
