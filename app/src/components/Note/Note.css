@@ -1,0 +1,9 @@
+.note {
+    background-color: rgb(45, 199, 127);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.delete-icon {
+	cursor: pointer;
+}
